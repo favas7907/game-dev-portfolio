@@ -76,9 +76,9 @@ export function Process() {
                 transition={{ delay: i * 0.1, duration: 0.8 }}
                 className="relative flex flex-col items-center text-center group"
               >
-                <div className="w-28 h-28 rounded-[2.5rem] bg-white border border-primary/5 shadow-2xl shadow-primary/5 flex items-center justify-center text-primary mb-12 group-hover:bg-primary group-hover:text-white group-hover:-translate-y-3 transition-all duration-700 z-10 relative">
+                <div className="w-28 h-28 rounded-3xl bg-white border border-primary/5 shadow-2xl shadow-primary/5 flex items-center justify-center text-primary mb-12 group-hover:bg-primary group-hover:text-white group-hover:-translate-y-3 transition-all duration-500 z-10 relative">
                   {step.icon}
-                  <div className="absolute -inset-2 bg-primary/5 rounded-[2.8rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10" />
+                  <div className="absolute -inset-2 bg-primary/5 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
                 </div>
                 
                 <div className="absolute top-12 left-1/2 -translate-x-1/2 text-[160px] font-display font-black text-primary/[0.02] -z-0 select-none pointer-events-none group-hover:text-primary/[0.05] transition-colors duration-700">

@@ -74,18 +74,18 @@
 }
 
 .layered-card {
-  @apply relative bg-white rounded-[2.5rem] border border-primary/5 shadow-sm;
+  @apply relative bg-white rounded-3xl border border-primary/5 shadow-sm;
   &::before {
     content: '';
-    @apply absolute inset-0 -z-10 translate-y-4 translate-x-4 rounded-[2.5rem] bg-primary/[0.02] border border-primary/5 transition-transform duration-500;
+    @apply absolute inset-0 -z-10 translate-y-3 translate-x-3 rounded-3xl bg-primary/[0.02] border border-primary/5 transition-transform duration-500;
   }
   &:hover::before {
-    @apply translate-y-6 translate-x-6;
+    @apply translate-y-4 translate-x-4;
   }
 }
 
 .soft-depth {
-  @apply shadow-[0_8px_30px_rgb(0,0,0,0.02)] border border-primary/5;
+  @apply shadow-[0_4px_20px_rgb(0,0,0,0.02)] border border-primary/5 rounded-3xl;
 }
 
 .blue-gradient-text {
@@ -93,11 +93,11 @@
 }
 
 .section-padding {
-  @apply py-24 md:py-40;
+  @apply py-20 md:py-32;
 }
 
 .container-tight {
-  @apply max-w-6xl mx-auto px-6;
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
 }
 
 .hero-gradient {

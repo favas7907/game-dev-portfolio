@@ -22,7 +22,7 @@ export function ProjectCard({ project, featured }: ProjectCardProps) {
   return (
     <Dialog>
       <div className="h-full">
-        <Card className={`h-full flex flex-col overflow-hidden border-none bg-white soft-depth transition-all duration-700 group relative hover:scale-[1.01] ${featured ? 'md:flex-row md:min-h-[500px] ring-1 ring-primary/5' : 'rounded-[2.5rem]'}`}>
+        <Card className={`h-full flex flex-col overflow-hidden border-none bg-white soft-depth transition-all duration-700 group relative hover:scale-[1.01] ${featured ? 'md:flex-row md:min-h-[500px] ring-1 ring-primary/5 rounded-3xl' : 'rounded-3xl'}`}>
           <div className={`relative overflow-hidden ${featured ? 'md:w-[55%]' : 'aspect-[16/10]'}`}>
             <img
               src={project.screenshots[0]}
@@ -85,7 +85,7 @@ export function ProjectCard({ project, featured }: ProjectCardProps) {
         </Card>
       </div>
 
-      <DialogContent className="max-w-5xl p-0 overflow-hidden rounded-[2rem] border-none shadow-2xl">
+      <DialogContent className="max-w-5xl p-0 overflow-hidden rounded-3xl border-none shadow-2xl">
         <DialogHeader className="p-10 pb-0">
           <div className="flex items-center gap-4 mb-4">
             <div className="w-12 h-1 bg-primary rounded-full" />
